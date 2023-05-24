@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body, html{
+    height:100%;
+}
+body{
+    height:100%;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+nav ul{
+    display: none;
+}
+.btn{
+    padding:.3rem;
+    font-size: large;
+    background:none;
+    border:none;
+    color:#392d9e;
+    cursor:pointer
+}
+.showMenu{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    right:10px;
+    top:10%;
+    background:#f2f2f2;
+    box-shadow:0 0 4px rgba(0,0,0,0.25);
+    transition:all .5s ease-in-out;
+    overflow-Y: scroll;
+}
+.showMenu li{
+    width:100%;
+    padding:.5rem;
+}
+.showMenu li:hover{
+    width:100%;
+    background:#cdeccd;
+    padding:.5rem;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    gap:.5rem;
+    width:100%;
+    height:max-content;
+
+}
+label{
+    padding:.5rem;
+}
+label, input{
+    width:100% ;
+}
+input, select, textarea{
+    padding:.5rem;
+    border-radius:.3rem;
+    outline:none;
+    border:1px solid rgba(0,0,0,0.15)
+}
+input:focus, select:focus, textarea:focus{
+    border:1px solid #abc123;
+    transition:all .5s ease-in-out;
+}
+textarea{
+    resize:none
+}
+.group{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+input[type="checkbox"]{
+    width:10% !important;
+    text-align:left !important;
+}
+.btn{
+    padding:.5rem;
+    border-radius:.3rem;
+    outline:none;
+    border:none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.35);
+    cursor:pointer;
+    font-size:large;
+}
+.btn-login{
+    background:#9c3058;
+    color:#fff;
+}
+.card{
+    width:90%;
+    margin:0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    background:#f6f6f6;
+    border-radius:.5rem;
+}
+[class*="card-"]{
+    width:100%;
+}
+.card-header{
+    background:#9c3058;
+    color:#fff;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+.card-header, .card-body, .card-footer{
+    padding:.5rem;
+}
+.translateY10{
+    transform: translateY(-10%);
+}

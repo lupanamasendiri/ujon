@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body, html{
+    height:100%;
+}
+body{
+    height:100%;
+    font-family: 'Quicksand', sans-serif;
+}
+nav, ul{
+    display:flex;
+    justify-content: space-between;
+}
+nav .brand, nav ul{
+    padding:.5rem;
+}
+nav a{
+    text-decoration: none;
+}
+nav ul{
+    gap:.5rem;
+}
+nav ul li{
+    list-style: none;
+    
+}
+.jumbotron{
+    padding:5rem;
+    height:400px;
+    background:#f6f6f6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
