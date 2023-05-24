@@ -46,7 +46,6 @@
         </div>
     </div>
 </div>
-
 <script>
     $('#btn-setting').on('click', function(e){
         var data = $('#settingForm')[0];
